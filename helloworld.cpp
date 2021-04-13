@@ -23,7 +23,7 @@ using namespace std;
 // Whenever the compiler sees the identifier x, it will know that we’re referencing this variable.
 
 
-// type int holds numbers
+// type int holds whole numbers
 int a = 5;
 int b = 3;
 int c = a*b;
@@ -32,16 +32,29 @@ int c = a*b;
 bool d = true;
 bool e = false;
 
-//bool k = d&&e;
-bool k = d||e;
+bool k = d&&e;
+// Hello Everyone! 0
+bool l = d||e;
+// Hello Everyone! 1
+
+// type double and float (stores decimal numbers)
+double h = 0.5;
+// Hello Everyone! 0.5
+double j = 0.7;
+
+double result = h+j;
+
+float i = 0.9;
+// Hello Everyone! 0.9
+
 
 int main (){
 
-    cout << "Hello Everyone! " << k;
+    cout << "Hello Everyone! " << result;
 
     return 0;
 }
-// Hello Everyone! 0
+
 
 
 
