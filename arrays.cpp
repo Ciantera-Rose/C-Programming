@@ -16,12 +16,38 @@ using namespace std;
  */
 
 
-int main () {
-    int arr[5] = {4, 1, 8, 2, 9};
-    int len = sizeof(arr)/sizeof(arr[0]);
+// int main () {
+//     int arr[5] = {4, 1, 8, 2, 9};
+//     int len = sizeof(arr)/sizeof(arr[0]);
 
-    cout << "The length of the array is: " << len << endl;
+//     cout << "The length of the array is: " << len << endl;
+
+//     return 0;
+//     // The length of the array is: 5
+// }
+
+
+int main() {
+
+    int numberOfCars = 10;
+    int carMiles[] = { 15, 13, 17, 30, 5, 2, 18, 9, 43, 22 };
+
+    string carManufacturers[] = { "Sabb", "Volvo", "BMW" };
+
+    cout << carMiles[0] << endl;
+    cout << carMiles[1] << endl;
+    cout << carMiles[2] << endl;
+    cout << carMiles[3] << endl;
+    // 15
+    // 13
+    // 17
+    // 30
+
+    cout << carManufacturers[1] << endl;
+    // Volvo
+
+    cout << "Number of cars: " << numberOfCars << endl;
+    // 10
 
     return 0;
-    // The length of the array is: 5
 }
