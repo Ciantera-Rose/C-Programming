@@ -18,6 +18,13 @@ int main () {
     // cin >> name;
     cout << "Good Morning " << name + "!" << endl;
 
+    int age = 0;
+    cout << "How old are you? ";
+    cin >> age;
+    cout << "Oh so you are " << age << " years old!";
+
     return 0;
 }
 // Good Morning Cian!
+// Good Morning Satoshi Nakomoto!
+// Oh so you are 33 years old!
