@@ -28,13 +28,21 @@ int a = 5;
 int b = 3;
 int c = a*b;
 
+//type bool (true = 1 or false = 0)
+bool d = true;
+bool e = false;
+
+//bool k = d&&e;
+bool k = d||e;
+
 int main (){
 
-    cout << "Hello Everyone! " << c;
+    cout << "Hello Everyone! " << k;
 
     return 0;
 }
-// Hello Everyone! 8
+// Hello Everyone! 0
+
 
 
 
