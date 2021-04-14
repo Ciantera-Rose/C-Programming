@@ -5,8 +5,11 @@ using namespace std;
 
 /* 
     Structs C++ : Object Oriented Programming
-    - A simple way to define our own datatypes
-    - Define outside int main()
+    - Structs are a simple way to define our own user-defined aggregate datatypes and there are many 
+      instances where we need more than one variable in order to represent an object.
+    - Structs allow us to group variables of mixed data types together into a single unit.
+    - The variables that are part of the struct are called  members (or fields). 
+      These variables are a part of the struct declaration, but no memory is allocated at this time.
 
     // Represent a person
     // 1) Name
@@ -29,28 +32,11 @@ void printPersonInfo(Person p){
 
 int main(){
 
-    Person cian;
-    cian.name = "Cian";
-    cian.gender = "female";
-    cian.age = 33;
+    Person cian = { "Cian", 33, "Female" };
+    Person kevin = { "Kevin", 29, "Male" };
 
-    Person kevin;
-    kevin.name = "Kevin";
-    kevin.gender = "Male";
-    kevin.age = 29;
-
-    Person people[] = {cian, kevin};
-
-    // printPersonInfo(cian);
-    // printPersonInfo(kevin);
-    printPersonInfo(people[0]);
+    printPersonInfo(cian);
+    printPersonInfo(kevin);
     
-
     return 0;
 }
-/* 
-    The name of the person is Cian
-    The age of the person is 33
-    The gender of the person is female
-    etc ...
- */
