@@ -24,19 +24,36 @@ struct Person {
     string gender;
 };
 
+struct Marriage {
+
+    Person personA;
+    Person personB;
+    int ageOfMarriage;
+    int numPeopleAtWedding;
+};
+
 void printPersonInfo(Person p){
     cout << "The name of the person is " << p.name << endl;
     cout << "The age of the person is " << p.age << endl;
     cout << "The gender of the person is " << p.gender << endl;
 }
 
-int main(){
+void printMarriageInfo(Marriage m) {
+    cout << m.personA.name << " married " << m.personB.name << endl;
+    cout << " They have been married for " << m.ageOfMarriage << " years " << endl;
+    cout << m.numPeopleAtWedding << " people attended their wedding. " << endl;
+}
+
+int main()
+{
 
     Person cian = { "Cian", 33, "Female" };
     Person kevin = { "Kevin", 29, "Male" };
+    Person dennis = { "Dennis" , 39, "Male" };
 
-    printPersonInfo(cian);
-    printPersonInfo(kevin);
-    
+    Marriage married = { cian, dennis, 20, 200};
+
+    printMarriageInfo(married);
+   
     return 0;
 }
