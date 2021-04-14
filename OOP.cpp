@@ -15,6 +15,7 @@ using namespace std;
 
 */
 
+/*
 class DateClass 
 {
     public:
@@ -35,5 +36,26 @@ int main ()
     today.print();
     return 0;
 }
+// The date today is 4/14/2021
+*/
 
+class Employee 
+{
+    public:
+    string m_name;
+    int m_id;
+    double m_wage;
 
+    void printEmployeeInfo()
+    {
+        cout << "Name: " << m_name << " " <<  "ID: " << m_id << " " << "Wage: $" << m_wage << endl;
+    }
+};
+
+int main ()
+{
+    Employee cian = {"Ciantera", 112, 60000.0};
+
+    cian.printEmployeeInfo();
+    return 0;
+}
