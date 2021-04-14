@@ -39,6 +39,7 @@ int main ()
 // The date today is 4/14/2021
 */
 
+/*
 class Employee 
 {
     public:
@@ -57,5 +58,30 @@ int main ()
     Employee cian = {"Ciantera", 112, 60000.0};
 
     cian.printEmployeeInfo();
+    return 0;
+}
+// Name: Ciantera ID: 112 Wage: $60000
+*/
+
+class Person 
+{
+    public:
+        string m_name;
+        int m_age;
+        string m_gender;
+
+        void printInfo()
+        {
+            cout << "Name: " << m_name << endl;
+            cout << "Age: " << m_age << endl;
+            cout << "Gender: " << m_gender << endl;
+        }
+};
+
+int main()
+{ 
+    Person cian = { "Cian", 33, "Female" };
+    // cout << cian.name << endl;
+    cian.printInfo();
     return 0;
 }
