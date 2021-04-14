@@ -33,14 +33,16 @@ string createGreeting(string name){
 
 int main () {
 
-    // int answer = multiply(5,2);
-    // cout << returnsFive() << endl;
-    // cout << answer << endl;
+    int answer = multiply(5,2);
+    cout << returnsFive() << endl;
+    cout << answer << endl;
+    // 5
+    // 10
 
-    // string name;
-    // cout << "What is your name? " << endl;
-    // getline(cin, name);
-    // cout << createGreeting(name);
+    string name;
+    cout << "What is your name? " << endl;
+    getline(cin, name);
+    cout << createGreeting(name);
     // Greetings Ciantera Rose!
 
     string name;
@@ -49,8 +51,7 @@ int main () {
 
      string greetingString = createGreeting(name);
      cout << greetingString;
+     // Greetings Ciantera!
 
     return 0;
 }
-// 5
-// 10

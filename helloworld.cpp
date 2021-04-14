@@ -43,6 +43,7 @@ double h = 0.5;
 double j = 0.7;
 
 double result = h+j;
+// Hello Everyone! 1.2
 
 float i = 0.9;
 // Hello Everyone! 0.9
