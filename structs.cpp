@@ -49,7 +49,7 @@ int main()
 
     Person cian = { "Cian", 33, "Female" };
     Person kevin = { "Kevin", 29, "Male" };
-    Person dennis = { "Dennis" , 39, "Male" };
+    Person dennis = { "Dennis", 39, "Male" };
 
     Marriage married = { cian, dennis, 20, 200};
 
