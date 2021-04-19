@@ -9,7 +9,8 @@ using namespace std;
     - Helps when using templates and to manage complex/massive data types.
     - The typedef specifier, when used in a declaration, specifies that the declaration is a typedef 
       declaration rather than a variable or function declaration.
-    - 
+    - We can assign a new name to any data type. We can also use typedef to assign a new name to a
+      struct which is a user-defined datatype etc
  */
 
 struct Homosapiens {
